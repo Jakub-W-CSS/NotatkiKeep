@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#F0F8FF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Notatki"
+            android:textSize="25sp"
+            android:textColor="#0000CD"/>
+        <ListView
+            android:id="@+id/listViewNotatki"
+            android:layout_width="match_parent"
+            android:layout_height="505dp"
+            >
+
+        </ListView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dodanie notatki"
+            android:textSize="23sp"
+            android:textColor="#0000CD"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tytuł notatki: "
+            android:textSize="14sp"/>
+        <EditText
+            android:id="@+id/editTextTytul"
+            android:layout_width="match_parent"
+            android:layout_height="35dp">
+
+        </EditText>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Treść notatki: "
+            android:textSize="14sp"/>
+        <EditText
+            android:id="@+id/editTextTresc"
+            android:layout_width="match_parent"
+            android:layout_height="35dp">
+
+        </EditText>
+        <Button
+            android:id="@+id/buttonDodaj"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="DODAJ"
+            android:textColor="#0000CD">
+
+        </Button>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
